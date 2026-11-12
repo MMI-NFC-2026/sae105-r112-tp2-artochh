@@ -10,9 +10,17 @@
     opacity: 1;
 }
 
+.menu:popover-open .burger--close {
+    transform: rotate(90deg);
+    transition: 400ms;
+}
+
 @starting-style {
     .menu:popover-open {
         opacity: 1;
+    }
+    .menu:popover-open .burger--close{
+        transform: none;
     }
 }
 
